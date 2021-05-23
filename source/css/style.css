@@ -160,11 +160,29 @@ a:hover {
 
 .content .category .category-item .cover {
 	width: 100%;
-	padding-bottom: 144%;
-	position: relative;
-	overflow: hidden;
-	height: 0;
-	border-radius: 3px;
+    padding-bottom: 144%;
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    border-radius: 3px;
+    background-color: #f6f3ed;
+    
+}
+
+.content .category .category-item .cover.red {
+	background-image: url(../image/p0452_m.jpg);
+    background-size: cover;
+}
+
+.content .category .category-item .cover.red h1 {
+	background-color: #f6f3ed;
+    margin: 2.5em 1.6em;
+    text-align: center;
+    font-size: .9em;
+    padding: .5em;
+    border: 2px solid #A1615A;
+    box-shadow: 0 0 0 5px #f6f3ed;
+    color: #000!important;
 }
 
 .content .category .category-item .cover img {
@@ -332,7 +350,7 @@ article > blockquote {
     border-left: 4px solid #aa874b;
     padding-left: calc(1em - 4px);
 	font-style: italic;
-	color: #888;
+	color: #777;
 }
 
 .highlight {

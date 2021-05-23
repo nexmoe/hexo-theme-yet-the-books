@@ -10,11 +10,26 @@
 	</div>
 	<div class="container">
 		<div class="category">
-			<% site.categories.map(function(category){  %>
-				<a class="category-item" href="<%- url_for(category.path) %>">
-					<div class="cover"><img src="t6_806899.jpg" /></div>
-					<div class="title"><%= category.name %></div>
-				</a>
+			<% site.categories.sort('name').map(function(category){  %>
+				<% 	let coverx = ""
+					category.posts.sort('-date').map(function(post){
+						if(post.cover!==undefined && coverx==""){ 
+							coverx = post.cover
+						}
+					}) 
+				%>
+						
+				<%  if(coverx == ""){ %> 
+					<a class="category-item" href="<%- url_for(category.path) %>">
+						<div class="cover red"><h1><%= category.name %></h1></div>
+						<div class="title"><%= category.name %></div>
+					</a>
+				<% } else { %>
+					<a class="category-item" href="<%- url_for(category.path) %>">
+						<div class="cover"><h1><img src="<%= coverx %>"></h1></div>
+						<div class="title"><%= category.name %></div>
+					</a>
+				<% } %> 
 			<% }) %>
 		</div>
 	</div>
