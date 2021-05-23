@@ -1,0 +1,21 @@
+<div class="content home">
+	<div class="banner">
+		<div class="container">
+			<div class="search">
+				<form id="search_form" action_e="<%= theme.search %>" onsubmit="return search();">
+					<label><input id="search_value" name="q" type="search" placeholder="<%= __('search') %>"></label>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="category">
+			<% site.categories.map(function(category){  %>
+				<a class="category-item" href="<%- url_for(category.path) %>">
+					<div class="cover"><img src="t6_806899.jpg" /></div>
+					<div class="title"><%= category.name %></div>
+				</a>
+			<% }) %>
+		</div>
+	</div>
+</div>

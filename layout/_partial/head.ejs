@@ -1,0 +1,37 @@
+<%
+var title = page.title;
+
+if (is_archive()){
+    title = __('archive');
+
+    if (is_month()){
+    title += '：' + page.year + '/' + page.month;
+    } else if (is_year()){
+    title += '：' + page.year;
+    }
+} else if (is_category()){
+    title = __('count.categories') + '：' + page.category;
+} else if (is_tag()){
+    title = __('count.tags') + '：' + page.tag;
+}
+%>
+<title><% if (title){ %><%= title %> - <% } %><%= config.title %></title>
+<meta charset="UTF-8" />
+<meta name="description" content="<%= config.description %>" />
+<meta name="keywords" content="<%= config.keywords %>" />
+<meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=5"
+/>
+<%- meta_generator() %>
+<%- css_auto_version('css/style') %>
+<link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Noto+Serif+SC"
+    media="all"
+/>
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/highlight.js@9.15.8/styles/solarized-light.css"
+/>
+<%- js_auto_version('js/core') %>

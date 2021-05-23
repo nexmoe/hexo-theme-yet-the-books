@@ -1,0 +1,50 @@
+<div class="content">
+	<div class="banner">
+		<div class="container"><h1><%= page.title %></h1></div>
+	</div>
+	<div class="container">
+		<article class="post">
+			<%- page.content %>
+			<p class="date"><%- date(page.date, "YYYY年M月D日") %></p>
+			<div class="info">
+				<div class="author">
+					<%= config.author %>
+					<% if (page.categories && page.categories.length){ %>
+						<%- list_categories(page.categories, {
+							show_count: false,
+							class: 'nexmoefont icon-appstore-fill ',
+							style: 'none',
+							separator: ''
+						}) %>
+					<% } %>
+				</div>
+				<a
+					class="copyright"
+					href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh"
+					target="_blank"
+					>&copy; CC BY-NC-SA 4.0</a
+				>
+			</div>
+		</article>
+	</div>
+	<div class="other">
+		<div class="container">
+			<nav class="post-nav">
+				<div class="new">
+					<span>上一章</span
+					><a href="./post.html"
+						>狂人日记
+					</a>
+					
+				</div>
+
+				<div class="old">
+					<span>下一章</span>
+					<a href="./post.html"
+						>药
+					</a>
+				</div>
+			</nav>
+		</div>
+	</div>
+</div>
