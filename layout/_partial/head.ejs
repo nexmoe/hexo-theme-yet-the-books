@@ -10,9 +10,9 @@ if (is_archive()){
     title += '：' + page.year;
     }
 } else if (is_category()){
-    title = __('count.categories') + '：' + page.category;
+    title = __('category') + '：' + page.category;
 } else if (is_tag()){
-    title = __('count.tags') + '：' + page.tag;
+    title = __('tag') + '：' + page.tag;
 }
 %>
 <title><% if (title){ %><%= title %> - <% } %><%= config.title %></title>
