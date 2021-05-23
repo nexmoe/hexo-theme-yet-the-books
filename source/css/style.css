@@ -18,6 +18,15 @@ a:hover {
 	color: #aa874b;
 }
 
+::selection {
+	background-color: #aa874b;
+	color: #fff;
+}
+::-moz-selection {
+	background-color: #aa874b;
+	color: #fff;
+}
+
 .container {
 	max-width: 40em;
 	margin: 0 auto;
@@ -74,17 +83,25 @@ a:hover {
 
 .content .banner h1 {
 	text-align: center;
-	line-height: 14rem;
-	margin: 0;
 	color: #aa874b;
+	display: block;
+	margin: 0 auto
 }
 
 .content .banner .container {
 	position: relative;
+	display: -webkit-box!important;
+    display: -ms-flexbox!important;
+    display: flex!important;
+    -webkit-box-align: center!important;
+    -ms-flex-align: center!important;
+    align-items: center!important;
+    height: 100%;
 }
 
 .content .banner .search {
 	position: relative;
+	width: 100%;
 }
 
 .content .banner .search form {
@@ -93,8 +110,8 @@ a:hover {
     box-shadow: 0 2px 7px rgb(170 135 75 / 10%);
     width: 70%;
     margin: auto 15%;
-	position: absolute;
-	top: 4rem;
+    position: relative;
+    margin-top: -25px;
 }
 
 .content .banner .search input {
@@ -307,9 +324,15 @@ article > table tr th:last-child, article > table tr td:last-child {
 }
 
 article blockquote {
+	margin: 0;
+}
+
+article > blockquote {
     margin: auto -1em;
     border-left: 4px solid #aa874b;
     padding-left: calc(1em - 4px);
+	font-style: italic;
+	color: #888;
 }
 
 .highlight {

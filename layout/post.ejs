@@ -9,14 +9,14 @@
 			<div class="info">
 				<div class="author">
 					<%= config.author %>
-					<% if (page.categories && page.categories.length){ %>
+					《<% if (page.categories && page.categories.length){ %>
 						<%- list_categories(page.categories, {
 							show_count: false,
 							class: 'nexmoefont icon-appstore-fill ',
 							style: 'none',
 							separator: ''
 						}) %>
-					<% } %>
+					<% } %>》
 				</div>
 				<a
 					class="copyright"
@@ -31,18 +31,17 @@
 		<div class="container">
 			<nav class="post-nav">
 				<div class="new">
-					<span>上一章</span
-					><a href="./post.html"
-						>狂人日记
-					</a>
-					
+					<span>上一章</span>
+					<% if(page.prev){%>
+					   <a href="<%- url_for(page.prev.path) %>">  <%= page.prev.title %></a>
+					<%}%>
 				</div>
 
 				<div class="old">
 					<span>下一章</span>
-					<a href="./post.html"
-						>药
-					</a>
+					<% if(page.next){%>
+						<a href="<%- url_for(page.next.path) %>"> <%= page.next.title %> </a>
+					<%}%>
 				</div>
 			</nav>
 		</div>
