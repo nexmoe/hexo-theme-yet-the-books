@@ -1,7 +1,12 @@
 body {
 	margin: 0;
 	font-size: 1.35em;
-	
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		font-size: 1.1em;
+	}
 }
 
 body * {
@@ -78,7 +83,6 @@ a:hover {
 .content .banner {
 	height: 14rem;
 	background-color: #f7f3ed;
-	
 }
 
 .content .banner h1 {
@@ -122,6 +126,17 @@ a:hover {
 	font-size: 1rem;
 	box-sizing: border-box;
 	outline: 0;
+}
+
+@media screen and (max-width: 768px) {
+	.content .banner {
+		height: 12rem;
+	}
+	.content .banner .search form {
+		width: 90%;
+		margin: auto 5%;
+		margin-top: -40px;
+	}
 }
 
 .content .category {
@@ -346,7 +361,7 @@ article blockquote {
 }
 
 article > blockquote {
-    margin: auto -1em;
+    margin-left: -1em;
     border-left: 4px solid #aa874b;
     padding-left: calc(1em - 4px);
 	font-style: italic;
