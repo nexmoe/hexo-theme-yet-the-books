@@ -10,7 +10,7 @@
 	</div>
 	<div class="container">
 		<div class="category">
-			<% site.categories.sort('name').map(function(category){  %>
+			<% site.categories.sort('length').map(function(category){  %>
 				<% 	let coverx = ""
 					category.posts.sort('-date').map(function(post){
 						if(post.cover!==undefined && coverx==""){ 
