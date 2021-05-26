@@ -6,7 +6,7 @@
 	</div>
 	<div class="container">
 		<ul class="catalogue">
-			<% page.posts.each(function (page) { %>
+			<% page.posts.sort(theme.order_by).each(function (page) { %>
 			<li>
 				<a href="<%- url_for(page.path) %>">
 					<span class="title"><%= page.title %></span>
