@@ -1,6 +1,7 @@
 <div class="content home">
 	<div class="banner">
 		<div class="container">
+			<h1><%= config.subtitle %></h1>
 			<div class="search">
 				<form id="search_form" action_e="<%= theme.search + "site:" +config.url %>" onsubmit="return search();">
 					<label><input id="search_value" name="q" type="search" placeholder="<%= __('search') %>"></label>

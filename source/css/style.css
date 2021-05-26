@@ -81,41 +81,40 @@ a:hover {
 }
 
 .content .banner {
-	height: 14rem;
 	background-color: #f7f3ed;
+	display: block;
+	position: relative;
+}
+
+.content.home .banner {
+	margin-bottom: calc(1.5rem + 2em);
 }
 
 .content .banner h1 {
 	text-align: center;
 	color: #aa874b;
 	display: block;
-	margin: 0 auto
+	margin: 0 auto;
+	padding: 2em 0;
 }
 
-.content .banner .container {
-	position: relative;
-	display: -webkit-box!important;
-    display: -ms-flexbox!important;
-    display: flex!important;
-    -webkit-box-align: center!important;
-    -ms-flex-align: center!important;
-    align-items: center!important;
-    height: 100%;
+.content.home .banner h1 {
+	padding: .8em 0;
 }
 
 .content .banner .search {
 	position: relative;
+	bottom: -1.5rem;
 	width: 100%;
 }
 
 .content .banner .search form {
 	background-color: #fff;
     border-radius: 30px;
-    box-shadow: 0 2px 7px rgb(170 135 75 / 10%);
-    width: 70%;
-    margin: auto 15%;
+    box-shadow: 0 2px 10px rgb(170 135 75 / 15%);
+    width: 74%;
+    margin: auto 13%;
     position: relative;
-    margin-top: -25px;
 }
 
 .content .banner .search input {
@@ -129,13 +128,9 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
-	.content .banner {
-		height: 12rem;
-	}
 	.content .banner .search form {
 		width: 90%;
 		margin: auto 5%;
-		margin-top: -40px;
 	}
 }
 
