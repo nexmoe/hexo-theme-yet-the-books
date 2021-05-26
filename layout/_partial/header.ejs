@@ -2,7 +2,9 @@
     <div class="container">
         <a class="logo" href="<%- url_for() %>" title="<%= config.author || config.title %>"><%= config.author || config.title %></a>
         <ul class="nav">
-            <li class="nav-item"><a href="<%- url_for() %>archives">归档</a></li>
+            <% for (name in theme.menu) { %>
+                <li class="nav-item"><a href="<%- url_for(theme.menu[name]) %>"><%= name %></a></li>
+            <% } %>
         </ul>
     </div>
 </div>

@@ -1,2 +1,7 @@
 search: https://cn.bing.com/search?q= # https://www.google.com/search?q==
 order_by: date
+
+
+menu:
+  归档: archives
+  关于: about.html
