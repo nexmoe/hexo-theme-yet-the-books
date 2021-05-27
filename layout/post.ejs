@@ -9,14 +9,14 @@
 			<div class="info">
 				<div class="author">
 					<%= config.author %>
-					《<% if (page.categories && page.categories.length){ %>
-						<%- list_categories(page.categories, {
+					<% if (page.categories && page.categories.length){ %>
+						《<%- list_categories(page.categories, {
 							show_count: false,
 							class: 'nexmoefont icon-appstore-fill ',
 							style: 'none',
 							separator: ''
-						}) %>
-					<% } %>》
+						}) %>》
+					<% } %>
 				</div>
 				<a
 					class="copyright"
