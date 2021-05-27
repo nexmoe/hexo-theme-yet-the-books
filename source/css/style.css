@@ -176,15 +176,10 @@ a:hover {
     height: 0;
     border-radius: 3px;
     background-color: #f6f3ed;
-    
+	background-size: cover;
 }
 
-.content .category .category-item .cover.red {
-	background-image: url(../image/p0452_m.jpg);
-    background-size: cover;
-}
-
-.content .category .category-item .cover.red h1 {
+.content .category .category-item .cover h1 {
 	background-color: #f6f3ed;
     margin: 2.5em 1.6em;
     text-align: center;
@@ -193,6 +188,48 @@ a:hover {
     border: 2px solid #A1615A;
     box-shadow: 0 0 0 5px #f6f3ed;
     color: #000!important;
+	background-color: #f6f3ed;
+    box-shadow: 0 0 0 5px #f6f3ed;
+}
+
+.content .category .category-item .cover.red {
+	background-image: url(../image/p0452_m.jpg);
+}
+
+.content .category .category-item .cover.red h1 {
+	border: 2px solid #A1615A;
+}
+
+.content .category .category-item .cover.purple {
+	background-image: url(../image/p0459_m.jpg);
+}
+
+.content .category .category-item .cover.purple h1 {
+	border: 2px solid #a2839c;
+}
+
+.content .category .category-item .cover.gray {
+	background-image: url(../image/p0402_m.jpg);
+}
+
+.content .category .category-item .cover.gray h1 {
+	border: 2px solid #989399;
+}
+
+.content .category .category-item .cover.blue {
+	background-image: url(../image/p0438_m.jpg);
+}
+
+.content .category .category-item .cover.blue h1 {
+	border: 2px solid #424f60;
+}
+
+.content .category .category-item .cover.green {
+	background-image: url(../image/p0440_m.jpg);
+}
+
+.content .category .category-item .cover.green h1 {
+	border: 2px solid #3f4c54;
 }
 
 .content .category .category-item .cover img {
