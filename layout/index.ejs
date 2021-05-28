@@ -4,7 +4,8 @@
 			<h1><%= config.subtitle %></h1>
 			<div class="search">
 				<form id="search_form" action_e="<%= theme.search + "site:" +config.url %>" onsubmit="return search();">
-					<label><input id="search_value" name="q" type="search" placeholder="<%= __('search') %>"></label>
+					<input autocomplete='off' id="search_value" name="q" type="search" placeholder="<%= __('placeholder') %>">
+					<input class="submit" type="submit" value="<%= __('search') %>">
 				</form>
 			</div>
 		</div>

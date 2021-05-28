@@ -115,10 +115,20 @@ a:hover {
     width: 74%;
     margin: auto 13%;
     position: relative;
+	display: flex;
 }
 
-.content .banner .search input {
+.content .banner .search #search_value {
 	width: 100%;
+	border: none;
+	background-color: transparent;
+	padding: 1rem 2rem;
+	font-size: 1rem;
+	box-sizing: border-box;
+	outline: 0;
+}
+
+.content .banner .search .submit {
 	border: none;
 	background-color: transparent;
 	padding: 1rem 2rem;
