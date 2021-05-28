@@ -6,7 +6,12 @@
 	</div>
 	<div class="container">
 		<ul class="catalogue">
-			<% page.posts.sort(theme.order_by).each(function (post) { %>
+			<% 	let order = theme.order_by
+				page.posts.each(function (post) { 
+					if(post.order !== ''){ order = post.order }
+				})
+				page.posts.sort(order).each(function (post) { 
+			%>
 			<li>
 				<a href="<%- url_for(post.path) %>">
 					<span class="title"><%= post.title %></span>
