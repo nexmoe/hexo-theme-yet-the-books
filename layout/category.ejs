@@ -6,12 +6,13 @@
 	</div>
 	<div class="container">
 		<ul class="catalogue">
-			<% 	let order = theme.order_by
+			<% 	
+				let order = theme.order_by
 				page.posts.each(function (post) { 
-					if(post.order !== ''){ order = post.order }
+					if(post.order_by !== null && post.order_by !== undefined){ order = post.order_by }
 				})
-				page.posts.sort(order).each(function (post) { 
 			%>
+			<%  page.posts.sort(order).each(function (post) { %>
 			<li>
 				<a href="<%- url_for(post.path) %>">
 					<span class="title"><%= post.title %></span>
