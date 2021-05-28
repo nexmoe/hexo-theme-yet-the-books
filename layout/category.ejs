@@ -6,11 +6,11 @@
 	</div>
 	<div class="container">
 		<ul class="catalogue">
-			<% page.posts.sort(theme.order_by).each(function (page) { %>
+			<% page.posts.sort(theme.order_by).each(function (post) { %>
 			<li>
-				<a href="<%- url_for(page.path) %>">
-					<span class="title"><%= page.title %></span>
-					<span class="date"><span><%- date(page.date, "YYYY-MM-DD") %></span></span>
+				<a href="<%- url_for(post.path) %>">
+					<span class="title"><%= post.title %></span>
+					<span class="date"><span><%- date(post.date, "YYYY-MM-DD") %></span></span>
 				</a>
 			</li>
 			<% }) %>

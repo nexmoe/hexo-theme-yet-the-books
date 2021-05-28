@@ -336,6 +336,14 @@ a:hover {
 	position: relative;
 }
 
+.comment {
+	padding: 3em 1em;
+}
+
+.comment .utterances {
+	max-width: 100%;
+}
+
 .footer {
 	padding: 2em 0;
 	text-align: center;
