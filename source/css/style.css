@@ -84,10 +84,11 @@ a:hover {
 	background-color: #f7f3ed;
 	display: block;
 	position: relative;
+	padding: 5rem 0;
 }
 
 .content.home .banner {
-	margin-bottom: calc(1.5rem + 2em);
+	margin-bottom: calc(1.5rem + 4rem);
 }
 
 .content .banner h1 {
@@ -95,16 +96,15 @@ a:hover {
 	color: #aa874b;
 	display: block;
 	margin: 0 auto;
-	padding: 2em 0;
 }
 
-.content.home .banner h1 {
-	padding: .8em 0;
+.content.home .banner {
+	padding: 3rem 0;
 }
 
 .content .banner .search {
 	position: relative;
-	bottom: -1.5rem;
+	bottom: -4.5rem;
 	width: 100%;
 }
 
@@ -270,8 +270,8 @@ a:hover {
 
 .content .info {
 	width: 100%;
-	display: flex;
-	justify-content: space-between;
+	text-align: center;
+	padding-top: 1rem;
 }
 
 .content .post-nav {
