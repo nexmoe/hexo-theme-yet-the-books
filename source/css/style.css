@@ -278,6 +278,7 @@ a:hover {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
+	flex-flow:row-reverse
 }
 
 .content .post-nav span {
@@ -289,7 +290,7 @@ a:hover {
 	width: 50%;
 }
 
-.content .post-nav .old {
+.content .post-nav .new {
 	text-align: right;
 }
 

@@ -1,0 +1,33 @@
+<nav class="post-nav">
+<% site.categories.map(function(category){  %>
+    <% page.categories.map(function(page_category){ %>
+        <% if(page_category.name == category.name){ %> <!-- 先找到与当前文字相同的目录 -->
+            <% let i = 0;%>
+            <% category.posts.sort('-date').map(function(post){ %>
+                <% i++;  %> 
+                <% if(post.title == page.title){ %> <!-- 在找到当前文章所在的 index -->
+                    <% let ix = 0;%>
+                    <% category.posts.sort('-date').map(function(post){ %>
+                        <% ix++; %> 
+
+                        <% if(ix == i + 1 && post.title){ %>  <!-- 上一篇文章 --> 
+                            <div class="old">
+                                <span>上一章</span>
+                                <a href="<%- url_for(post.path) %>"> <%= post.title %></a>
+                            </div>
+                        <% } %>
+
+                        <% if(ix == i - 1 && post.title){ %> <!-- 下一篇文章 --> 
+                            <div class="new">
+                                <span>下一章</span>
+                                <a href="<%- url_for(post.path) %>"> <%= post.title %></a>
+                            </div>
+                        <% } %>
+
+                    <% }) %>
+                <% } %>
+            <% }) %>
+        <% } %>
+    <% })%>
+<% }) %>
+</nav>

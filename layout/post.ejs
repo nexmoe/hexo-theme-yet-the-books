@@ -22,21 +22,7 @@
 	</div>
 	<div class="other">
 		<div class="container">
-			<nav class="post-nav">
-				<div class="new">
-					<span>上一章</span>
-					<% if(page.prev){%>
-					   <a href="<%- url_for(page.prev.path) %>">  <%= page.prev.title %></a>
-					<%}%>
-				</div>
-
-				<div class="old">
-					<span>下一章</span>
-					<% if(page.next){%>
-						<a href="<%- url_for(page.next.path) %>"> <%= page.next.title %> </a>
-					<%}%>
-				</div>
-			</nav>
+			<%- partial('_partial/post-nav') %> 
 		</div>
 	</div>
 	<div class="container comment">
