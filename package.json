@@ -1,0 +1,24 @@
+{
+	"name": "hexo-theme-yet-the-books",
+	"version": "1.0.0",
+	"description": "🌙 It starts with the appearance and stays true to the words. A blog theme dedicated to those who love to think.",
+	"keywords": [
+		"hexo",
+		"theme",
+		"yet-the-books"
+	],
+	"author": "Nexmoe (https://github.com/nexmoe)",
+	"license": "MIT",
+	"main": "index.js",
+	"scripts": {
+		"postinstall": "node ./move_config.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/Yet-The-Books/hexo-theme-yet-the-books.git"
+	},
+	"bugs": {
+		"url": "https://github.com/Yet-The-Books/hexo-theme-yet-the-books/issues"
+	},
+	"homepage": "https://github.com/Yet-The-Books/hexo-theme-yet-the-books"
+}
