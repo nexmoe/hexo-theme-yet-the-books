@@ -22,7 +22,7 @@
 	</div>
 	<div class="other">
 		<div class="container">
-			<%- partial('_partial/post-nav') %> 
+			<%- is_post() ? partial('_partial/post-nav') : '' %> 
 		</div>
 	</div>
 	<div class="container comment">
