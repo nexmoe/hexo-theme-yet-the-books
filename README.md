@@ -18,4 +18,4 @@
 # 尝鲜
 大体写的差不多了，没写文档，可使用下面的命令进行安装（安装完就可以直接用了
 
-    npm i hexo-theme-nexmoe
+    npm i hexo-theme-yet-the-books
