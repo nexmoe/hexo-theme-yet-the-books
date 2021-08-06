@@ -18,4 +18,15 @@
 # 使用
 使用下面的命令进行安装（安装完就可以直接用了
 
-    npm i hexo-theme-yet-the-books
+```shell
+npm i hexo-theme-yet-the-books
+```
+
+# Front-matter
+
+| 参数       | 描述                                                       | 默认值         |
+| :--------- | :--------------------------------------------------------- | :------------- |
+| `cover`    | 封面，需为图片目录或链接                                   | null           |
+| `order_by` | 目录根据文章的什么排序（可选值：date,-date,title,url,...） | theme.order_by |
+| `color`    | 封面颜色（可选值：red,purple,gray,blue,green）             | red            |
+
