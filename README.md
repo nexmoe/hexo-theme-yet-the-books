@@ -30,6 +30,8 @@
 npm i hexo-theme-yet-the-books
 ```
 
+配置主题请更改根目录文件 _config.yet-the-books.yml
+
 # Front-matter
 
 | 参数       | 描述                                                       | 默认值         |
@@ -37,4 +39,3 @@ npm i hexo-theme-yet-the-books
 | `cover`    | 封面，需为图片目录或链接                                   | null           |
 | `order_by` | 目录根据文章的什么排序（可选值：date,-date,title,url,...） | theme.order_by |
 | `color`    | 封面颜色（可选值：red,purple,gray,blue,green）             | red            |
-
