@@ -39,3 +39,5 @@ npm i hexo-theme-yet-the-books
 | `cover`    | 封面，需为图片目录或链接                                   | null           |
 | `order_by` | 目录根据文章的什么排序（可选值：date,-date,title,url,...） | theme.order_by |
 | `color`    | 封面颜色（可选值：red,purple,gray,blue,green）             | red            |
+
+其他：https://hexo.io/zh-cn/docs/front-matter
