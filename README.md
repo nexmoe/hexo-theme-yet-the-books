@@ -1,3 +1,11 @@
+# 演示
+
+欢迎将你的网站提交到这里来 [点我提交演示站点](https://github.com/Yet-The-Books/hexo-theme-yet-the-books/discussions/12) 或 [直接编辑（推荐）](https://github.com/Yet-The-Books/hexo-theme-yet-the-books/edit/main/README.md)
+
+| 站点                                  | 状态                                                         |
+| ------------------------------------- | ------------------------------------------------------------ |
+| [陆本为](https://books.nexmoe.com/)       | ![陆本为](https://img.shields.io/website?url=https://books.nexmoe.com/) |
+
 # 主题逻辑
 
 | 对应博客逻辑 | 对应书的关系 |
