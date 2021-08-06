@@ -1,10 +1,10 @@
-# 演示
+# 预览
 
-欢迎将你的网站提交到这里来 [点我提交演示站点](https://github.com/Yet-The-Books/hexo-theme-yet-the-books/discussions/12) 或 [直接编辑（推荐）](https://github.com/Yet-The-Books/hexo-theme-yet-the-books/edit/main/README.md)
-
-| 站点                                  | 状态                                                         |
-| ------------------------------------- | ------------------------------------------------------------ |
-| [陆本为](https://books.nexmoe.com/)       | ![陆本为](https://img.shields.io/website?url=https://books.nexmoe.com/) |
+| ![首页（书架）](./cover/1.png) | ![分类页（目录）](./cover/2.png) |
+| :----------------------------: | :------------------------------: |
+|          首页（书架）          |          分类页（目录）          |
+|    ![文章页](./cover/3.png)    |     ![归档页](./cover/4.png)     |
+|             文章页             |              归档页              |
 
 # 主题逻辑
 
@@ -15,13 +15,13 @@
 | 分类详情页   | 目录         |
 | 一篇文章     | 目录中的一条 |
 
-# 预览
+# 演示
 
-| ![首页（书架）](./cover/1.png) | ![分类页（目录）](./cover/2.png) |
-| :----------------------------: | :------------------------------: |
-|          首页（书架）          |          分类页（目录）          |
-|    ![文章页](./cover/3.png)    |     ![归档页](./cover/4.png)     |
-|             文章页             |              归档页              |
+欢迎将你的网站提交到这里来 [点我提交演示站点](https://github.com/Yet-The-Books/hexo-theme-yet-the-books/discussions/12) 或 [直接编辑（推荐）](https://github.com/Yet-The-Books/hexo-theme-yet-the-books/edit/main/README.md)
+
+| 站点                                  | 状态                                                         |
+| ------------------------------------- | ------------------------------------------------------------ |
+| [陆本为](https://books.nexmoe.com/)       | ![陆本为](https://img.shields.io/website?url=https://books.nexmoe.com/) |
 
 # 使用
 使用下面的命令进行安装（安装完就可以直接用了
