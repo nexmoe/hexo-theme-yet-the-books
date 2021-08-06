@@ -32,6 +32,9 @@ npm i hexo-theme-yet-the-books
 
 配置主题请更改根目录文件 _config.yet-the-books.yml
 
+# 使用示例
+https://github.com/nexmoe/books
+
 # Front-matter
 
 | 参数       | 描述                                                       | 默认值         |
