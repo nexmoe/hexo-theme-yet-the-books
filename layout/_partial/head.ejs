@@ -16,7 +16,7 @@ if (is_archive()){
 }
 %>
 <title><% if (title){ %><%= title %> - <% } %><%= config.title %></title>
-<meta charset="UTF-8" />
+<meta charset="utf-8" />
 <meta name="description" content="<%= config.description %>" />
 <meta name="keywords" content="<%= config.keywords %>" />
 <meta
@@ -25,6 +25,7 @@ if (is_archive()){
 />
 <%- meta_generator() %>
 <%- css_auto_version('css/style') %>
+<link rel="shortcut icon" href="<%= theme.favicon.href %>" type="<%= theme.favicon.type %>" />
 <link
     rel="stylesheet"
     href="https://fonts.googleapis.com/css?family=Noto+Serif+SC&display=swap"

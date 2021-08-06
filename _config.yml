@@ -1,3 +1,6 @@
+favicon:
+  href: /favicon.ico # 网站图标
+  type: image/x-icon # 图标类型，可能的值有(image/png, image/vnd.microsoft.icon, image/x-icon, image/gif)
 search: https://cn.bing.com/search?q= # https://www.google.com/search?q==
 order_by: date # date,-date,title,url,...
 
