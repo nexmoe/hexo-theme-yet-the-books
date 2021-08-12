@@ -3,6 +3,7 @@ favicon:
   type: image/x-icon # 图标类型，可能的值有(image/png, image/vnd.microsoft.icon, image/x-icon, image/gif)
 search: https://cn.bing.com/search?q= # https://www.google.com/search?q==
 order_by: date # date,-date,title,url,...
+head: `<!--<script src="" async></script>-->` # 在 <head></head> 中添加自定义的内容
 
 menu:
   归档: archives
