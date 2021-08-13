@@ -11,6 +11,9 @@
 						separator: ''
 					}) %>》
 				<% } %>
+				<% if (theme.github.repo && theme.github.edit) { %>
+					<a href="<%= 'https://github.com/' + theme.github.repo + '/tree/master/source/' + page.source %>" target="_blank" rel="external nofollow noreferrer noopener">编辑</a>
+				<% } %>
 			</div>
 			
 		</div>
@@ -18,6 +21,12 @@
 	<div class="container">
 		<article class="post">
 			<%- page.content %>
+			<br>
+			<%- list_tags(page.tags,{
+				show_count: true,
+				style: "unordered list",
+				separator: ", "
+			}) %>
 		</article>
 	</div>
 	<div class="other">

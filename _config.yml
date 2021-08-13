@@ -9,6 +9,11 @@ menu:
   归档: archives
   关于: about.html
 
+github:
+  repo: nexmoe/books # nexmoe/books
+  edit: true # true,false
+  history: true # true,false
+
 analytics: # 统计系统，目前支持 Google analytics.js 统计、Google Tag Manager 统计、CNZZ 统计、腾讯统计、51.La统计、百度统计
   google_site_id: #<ID>
   gtags_site_id: #<ID>
