@@ -20,13 +20,11 @@
 			<%- page.content %>
 		</article>
 	</div>
-	<% if(is_post()){ %> 
-		<div class="other">
-			<div class="container">
-				<%- partial('_partial/post-nav') %> 
-			</div>
+	<div class="other">
+		<div class="container">
+			<%- is_post() ? partial('_partial/post-nav') : '' %> 
 		</div>
-	<% } %> 
+	</div>
 	<div class="container comment">
 		<%- theme.comment ? partial('_partial/_comment/' + theme.comment) : '' %>
 	</div>
