@@ -6,6 +6,11 @@
 	</div>
 	<div class="container">
 		<article class="post">
+			<%- list_tags({
+				show_count: true,
+				style: "unordered list",
+				separator: ", "
+			}) %>
 			<% // 参考：https://github.com/SukkaW/hexo-theme-suka/blob/master/layout/_pages/archive.ejs %>
 			<% function buildArchive(posts, year) { %>
 				<h2><%= year %></h2>

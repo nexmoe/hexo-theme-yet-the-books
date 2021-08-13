@@ -278,7 +278,7 @@ a:hover {
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	flex-flow:row-reverse
+	flex-flow: row-reverse
 }
 
 .content .post-nav span {
@@ -347,6 +347,19 @@ a:hover {
 	position: relative;
 }
 
+.content .tag-unordered {
+	word-break: break-word;
+}
+
+.content .tag-unordered .list-count::before {
+	content: "("
+}
+
+.content .tag-unordered .list-count::after {
+	content: ")"
+}
+
+
 .comment {
 	padding: 3em 1em;
 }
@@ -367,6 +380,7 @@ article p {
 
 article a {
 	color: #aa874b;
+	word-break: break-all;
 }
 
 article > table {
