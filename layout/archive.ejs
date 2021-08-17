@@ -5,21 +5,53 @@
 		</div>
 	</div>
 	<div class="container">
-		<article class="post">
+		<article class="post archive">
 			<%- list_tags({
 				show_count: true,
 				style: "unordered list",
 				separator: ", "
 			}) %>
+
+			<% if(theme.archives.switch) { %> 
+				<p>当前默认显示的分类为：
+					<% for (index in theme.archives.categories) { %>
+						<%- theme.archives.categories[index] %>
+					<% } %>
+					（<a class="display-btn" onclick="displayAll()">显示所有</a>）
+				</p>
+			<% } %> 
+
 			<% // 参考：https://github.com/SukkaW/hexo-theme-suka/blob/master/layout/_pages/archive.ejs %>
 			<% function buildArchive(posts, year) { %>
 				<h2><%= year %></h2>
 				<ul  class="catalogue">
 				<% posts.sort('date',-1).each(post => { %>
-					<li><a href="<%- url_for(post.path) %>" >
-						<span class="title"><%- post.title %></span>
-						<span class="date"><span><%= date(post.date, 'MM-DD') %></span></span>
-					</a></li>
+					<% post.categories.map(function(category){  %>
+						<% 
+							// 判断是否为已设置需要显示的分类
+							let displayTF = false;
+							if(theme.archives.switch) {
+								for (index in theme.archives.categories) { 
+									if(category.name == theme.archives.categories[index]){ 
+										displayTF = true;
+									}
+								} 
+							} else {
+								displayTF = true;
+							}
+						%> 
+						<% if(displayTF){ %> 
+							<li class="display"><a href="<%- url_for(post.path) %>" >
+								<span class="title"><%- post.title %></span>
+								<span class="date"><span><%= date(post.date, 'MM-DD') %></span></span>
+							</a></li>
+						<% } else { %>
+							<li class="hidden"><a href="<%- url_for(post.path) %>" >
+								<span class="title"><%- post.title %></span>
+								<span class="date"><span><%= date(post.date, 'MM-DD') %></span></span>
+							</a></li>
+						<% } %>
+					<% }) %>
 				<% }) %>
 				</ul>
 			<% } %>
@@ -42,3 +74,7 @@
 		</article>
 	</div>
 </div>
+
+<script>
+
+</script>

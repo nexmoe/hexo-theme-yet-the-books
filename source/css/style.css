@@ -347,6 +347,18 @@ a:hover {
 	position: relative;
 }
 
+.content .catalogue .hidden {
+	display: none;
+}
+
+.content .catalogue .display {
+	display: block;
+}
+
+.content .archive .display-btn {
+	cursor: pointer;
+}
+
 .content .tag-unordered {
 	word-break: break-word;
 }

@@ -5,6 +5,10 @@ search: https://cn.bing.com/search?q= # https://www.google.com/search?q==
 order_by: date # date,-date,title,url,...
 head: '<!--<script src="" async></script>-->' # 在 <head></head> 中添加自定义的内容
 
+archives:
+  switch: false # true,false 来开关本功能
+  categories: [算法,游戏] # 仅你设置的分类会在归档页面显示
+
 menu:
   归档: archives
   关于: about.html
