@@ -1,17 +1,18 @@
 favicon:
-  href: /favicon.ico # 网站图标
-  type: image/x-icon # 图标类型，可能的值有(image/png, image/vnd.microsoft.icon, image/x-icon, image/gif)
+  href: /favicon.ico # Favicon of your site.
+  type: image/x-icon # Icon type, possible values are(image/png, image/vnd.microsoft.icon, image/x-icon, image/gif)
+
 search: https://cn.bing.com/search?q= # https://www.google.com/search?q==
 order_by: date # date,-date,title,url,...
-head: '<!--<script src="" async></script>-->' # 在 <head></head> 中添加自定义的内容
+head: '<!--<script src="" async></script>-->' # Add anything to <head></head>
 
 archives:
-  switch: false # true,false 来开关本功能
-  categories: [算法,游戏] # 仅你设置的分类会在归档页面显示
+  switch: false # true,false Switching this function.
+  categories: [算法,游戏] # Only the categories you set will be displayed on the archive page.
 
 menu:
-  归档: archives
-  关于: about.html
+  Archives: archives
+  About: about.html
 
 github:
   repo: nexmoe/books # nexmoe/books
