@@ -14,6 +14,10 @@ menu:
   Archives: archives
   About: about.html
 
+footer_link:
+  折影轻梦: https://nexmoe.com/
+  还有书籍: https://github.com/Yet-The-Books/hexo-theme-yet-the-books
+
 github:
   repo: nexmoe/books # nexmoe/books
   edit: true # true,false

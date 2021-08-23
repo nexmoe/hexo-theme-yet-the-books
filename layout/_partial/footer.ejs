@@ -1,7 +1,18 @@
 <div class="footer">
     <div class="container">
-        &copy; <%= date(new Date(), 'YYYY') %> <%= config.title %>
-        Using <a rel="noreferrer" href="http://hexo.io/" target="_blank">Hexo</a> 
-        &amp; <a rel="noreferrer" href="https://github.com/Yet-The-Books/hexo-theme-yet-the-books" target="_blank">Yet The Books</a>
+        <div class="footer-content">
+            <div class="footer-left"><%= config.title %></div>
+            <div class="footer-right"> 
+                <div class="footer-links">
+                    <% for (name in theme.footer_link) { %>
+                        <a href="<%- url_for(theme.footer_link[name]) %>"><%= name %></a>
+                    <% } %>
+                </div>
+                <div calss="footer-copyright">&copy; <%= date(new Date(), 'YYYY') %> <%= config.title %>
+                    Using <a rel="noreferrer" href="http://hexo.io/" target="_blank">Hexo</a> 
+                    &amp; <a rel="noreferrer" href="https://github.com/Yet-The-Books/hexo-theme-yet-the-books" target="_blank">Yet The Books</a>
+                </div>
+            </div>  
+        </div>
     </div>
 </div>
