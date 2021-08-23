@@ -22,6 +22,8 @@
 | 站点                                  | 状态                                                         |
 | ------------------------------------- | ------------------------------------------------------------ |
 | [陆本为](https://books.nexmoe.com/)       | ![陆本为](https://img.shields.io/website?url=https://books.nexmoe.com/) |
+| [三味书屋](https://zain-books.vercel.app/)       | ![三味书屋](https://img.shields.io/website?url=https://zain-books.vercel.app/) |
+
 
 # 使用
 使用下面的命令进行安装（安装完就可以直接用了
