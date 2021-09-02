@@ -34,6 +34,8 @@ npm i hexo-theme-yet-the-books
 
 配置主题请更改根目录文件 _config.yet-the-books.yml
 
+注意：使用本主题，你的文章必须得有一个分类
+
 # 使用示例
 https://github.com/nexmoe/books
 
