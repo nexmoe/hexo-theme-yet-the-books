@@ -11,7 +11,7 @@ archives:
   categories: [算法,游戏] # Only the categories you set will be displayed on the archive page.
 
 menu:
-  Categories: categories
+  Archives: archives
   About: about.html
 
 footer_link:

@@ -385,8 +385,8 @@ a:hover {
 }
 
 .footer {
-	margin-top: 2em;
 	background-color: #f7f3ed;
+    border-top: 2px solid #eee;
 }
 
 .footer a {
@@ -401,6 +401,7 @@ a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -416,15 +417,6 @@ a:hover {
 
 .footer-links a {
 	margin-left: .5em;
-}
-
-.footer-copyright {
-	text-align: center;
-	padding: 1.5em;
-}
-
-.footer-copyright a {
-	color: #aa874b;
 }
 
 article p {
