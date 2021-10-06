@@ -48,3 +48,6 @@ https://github.com/nexmoe/books
 | `color`    | 封面颜色（可选值：red,purple,gray,blue,green）             | red            |
 
 其他：https://hexo.io/zh-cn/docs/front-matter
+
+# 社区
+主题交流群：[🌙 还有书籍主题](https://jq.qq.com/?_wv=1027&k=4sLtwk78)
