@@ -93,3 +93,9 @@ utteranc: # https://utteranc.es/
 	issue_term: pathname
 	label: Comment
 	theme: github-light
+
+giscuss: # https://giscuss.app/
+  repo: [ENTER REPO HERE]
+  issue_term: title
+  label: General
+  theme: light
