@@ -96,6 +96,10 @@ utteranc: # https://utteranc.es/
 
 giscus: # https://giscus.app/
   repo: [ENTER REPO HERE]
-  issue_term: title
-  label: General
+  repo_id: 
+  category: General
+  category_id:
+  mapping: title
+  reactions_enabled: true
   theme: light
+  lang: zh-CN
